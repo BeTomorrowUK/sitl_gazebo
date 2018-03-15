@@ -29,10 +29,11 @@
       <sensor type="multicamera" name="stereo_camera">
         <update_rate>30.0</update_rate>
         <camera name="left">
-          <horizontal_fov>1.3962634</horizontal_fov>
+          <!-- using ZED camera 110degrees WVGA -->
+          <horizontal_fov>1.91986</horizontal_fov>
           <image>
-            <width>800</width>
-            <height>800</height>
+            <width>1344</width>
+            <height>376</height>
             <format>R8G8B8</format>
           </image>
           <clip>
@@ -46,11 +47,11 @@
           </noise>
         </camera>
         <camera name="right">
-          <pose>0 -0.07 0 0 0 0</pose>
-          <horizontal_fov>1.3962634</horizontal_fov>
+          <pose>0 -0.145 0 0 0 0</pose>
+          <horizontal_fov>1.91986</horizontal_fov>
           <image>
-            <width>800</width>
-            <height>800</height>
+            <width>1344</width>
+            <height>376</height>
             <format>R8G8B8</format>
           </image>
           <clip>
