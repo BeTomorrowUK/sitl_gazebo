@@ -40,19 +40,19 @@
               <horizontal>
                 <samples>5</samples>
                 <resolution>1.0</resolution>
-                <min_angle>-0.25</min_angle>
-                <max_angle>0.25</max_angle>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
               </horizontal>
               <vertical>
                 <samples>5</samples>
                 <resolution>1</resolution>
-                <min_angle>-0.25</min_angle>
-                <max_angle>0.25</max_angle>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
               </vertical>
             </scan>
             <range>
               <min>0.15</min>
-              <max>3.00</max>
+              <max>4.50</max>
               <resolution>0.035</resolution>
             </range>
         </ray>
@@ -64,7 +64,7 @@
             <updateRate>5</updateRate>
             <topicName>sonar_front</topicName>
             <frameName>sonar_front_link</frameName>
-            <fov>0.5</fov>
+            <fov>0.261799</fov>
             <radiation>ultrasound</radiation>
         </plugin>
       </sensor>
@@ -77,19 +77,19 @@
               <horizontal>
                 <samples>5</samples>
                 <resolution>1.0</resolution>
-                <min_angle>-0.25</min_angle>
-                <max_angle>0.25</max_angle>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
               </horizontal>
               <vertical>
                 <samples>5</samples>
                 <resolution>1</resolution>
-                <min_angle>-0.25</min_angle>
-                <max_angle>0.25</max_angle>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
               </vertical>
             </scan>
             <range>
               <min>0.15</min>
-              <max>3.00</max>
+              <max>4.50</max>
               <resolution>0.035</resolution>
             </range>
         </ray>
@@ -101,7 +101,7 @@
             <updateRate>5</updateRate>
             <topicName>sonar_back</topicName>
             <frameName>sonar_back_link</frameName>
-            <fov>0.5</fov>
+            <fov>0.261799</fov>
             <radiation>ultrasound</radiation>
         </plugin>
       </sensor>
@@ -151,19 +151,19 @@
               <horizontal>
                 <samples>5</samples>
                 <resolution>1.0</resolution>
-                <min_angle>-0.25</min_angle>
-                <max_angle>0.25</max_angle>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
               </horizontal>
               <vertical>
                 <samples>5</samples>
                 <resolution>1</resolution>
-                <min_angle>-0.25</min_angle>
-                <max_angle>0.25</max_angle>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
               </vertical>
             </scan>
             <range>
               <min>0.15</min>
-              <max>3.00</max>
+              <max>4.50</max>
               <resolution>0.035</resolution>
             </range>
         </ray>
@@ -175,7 +175,7 @@
             <updateRate>5</updateRate>
             <topicName>sonar_right_1</topicName>
             <frameName>sonar_right_1_link</frameName>
-            <fov>0.5</fov>
+            <fov>0.261799</fov>
             <radiation>ultrasound</radiation>
         </plugin>
       </sensor>
@@ -188,19 +188,19 @@
               <horizontal>
                 <samples>5</samples>
                 <resolution>1.0</resolution>
-                <min_angle>-0.25</min_angle>
-                <max_angle>0.25</max_angle>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
               </horizontal>
               <vertical>
                 <samples>5</samples>
                 <resolution>1</resolution>
-                <min_angle>-0.25</min_angle>
-                <max_angle>0.25</max_angle>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
               </vertical>
             </scan>
             <range>
               <min>0.15</min>
-              <max>3.00</max>
+              <max>4.50</max>
               <resolution>0.035</resolution>
             </range>
         </ray>
@@ -212,7 +212,7 @@
             <updateRate>5</updateRate>
             <topicName>sonar_right_2</topicName>
             <frameName>sonar_right_2_link</frameName>
-            <fov>0.5</fov>
+            <fov>0.261799</fov>
             <radiation>ultrasound</radiation>
         </plugin>
       </sensor>
