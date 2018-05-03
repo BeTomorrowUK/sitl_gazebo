@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <model name="sonar_be_2">
+    <pose>0 0 0.036 0 0 0</pose>
+    <link name="link">
+
+      <inertial>
+       <pose>0 0 0 0 0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>0.15e-6</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.407e-6</iyy>
+          <iyz>0</iyz>
+          <izz>0.407e-6</izz>
+        </inertia>
+      </inertial>
+
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.03 0.03 0.03</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      
+
+      <sensor type="ray" name="sonar_front_right">
+        <pose>0.05 -0.2 0 0 0 -0.785398</pose>
+        <update_rate>5</update_rate>
+        <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1.0</resolution>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.15</min>
+              <max>4.50</max>
+              <resolution>0.035</resolution>
+            </range>
+        </ray>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+            <robotNamespace/>
+            <gaussianNoise>0.005</gaussianNoise>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>5</updateRate>
+            <topicName>sonar_front_right</topicName>
+            <frameName>sonar_front_right_link</frameName>
+            <fov>0.261799</fov>
+            <radiation>ultrasound</radiation>
+        </plugin>
+      </sensor>
+      
+      <sensor type="ray" name="sonar_back_right">
+        <pose>-0.35 -0.2 0 0 0 -2.35619</pose>
+        <update_rate>5</update_rate>
+        <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1.0</resolution>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.15</min>
+              <max>4.50</max>
+              <resolution>0.035</resolution>
+            </range>
+        </ray>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+            <robotNamespace/>
+            <gaussianNoise>0.005</gaussianNoise>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>5</updateRate>
+            <topicName>sonar_back_right</topicName>
+            <frameName>sonar_back_right_link</frameName>
+            <fov>0.261799</fov>
+            <radiation>ultrasound</radiation>
+        </plugin>
+      </sensor>
+
+      <sensor type="ray" name="sonar_front_left">
+        <pose>0.05 0.2 0 0 0 0.785398</pose>
+        <update_rate>5</update_rate>
+        <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1.0</resolution>
+                <min_angle>-0.25</min_angle>
+                <max_angle>0.25</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.25</min_angle>
+                <max_angle>0.25</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.15</min>
+              <max>3.00</max>
+              <resolution>0.035</resolution>
+            </range>
+        </ray>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+            <robotNamespace/>
+            <gaussianNoise>0.005</gaussianNoise>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>5</updateRate>
+            <topicName>sonar_front_left</topicName>
+            <frameName>sonar_front_left_link</frameName>
+            <fov>0.5</fov>
+            <radiation>ultrasound</radiation>
+        </plugin>
+      </sensor>
+
+      <sensor type="ray" name="sonar_back_left">
+        <pose>-0.35 0.2 0 0 0 2.35619</pose>
+        <update_rate>5</update_rate>
+        <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1.0</resolution>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.1309</min_angle>
+                <max_angle>0.1309</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.15</min>
+              <max>4.50</max>
+              <resolution>0.035</resolution>
+            </range>
+        </ray>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+            <robotNamespace/>
+            <gaussianNoise>0.005</gaussianNoise>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>5</updateRate>
+            <topicName>sonar_back_left</topicName>
+            <frameName>sonar_back_left_link</frameName>
+            <fov>0.261799</fov>
+            <radiation>ultrasound</radiation>
+        </plugin>
+      </sensor>
+
+      <sensor type="ray" name="sonar_up">
+        <pose>0.05 0.0 0.1 0 -1.5707 0.0</pose>
+        <update_rate>5</update_rate>
+        <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1.0</resolution>
+                <min_angle>-0.25</min_angle>
+                <max_angle>0.25</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.25</min_angle>
+                <max_angle>0.25</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.15</min>
+              <max>3.00</max>
+              <resolution>0.035</resolution>
+            </range>
+        </ray>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+            <robotNamespace/>
+            <gaussianNoise>0.005</gaussianNoise>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>5</updateRate>
+            <topicName>sonar_up</topicName>
+            <frameName>sonar_up_link</frameName>
+            <fov>0.5</fov>
+            <radiation>ultrasound</radiation>
+        </plugin>
+      </sensor>
+
+      <sensor type="ray" name="sonar_down">
+        <pose>0.05 0.0 -0.1 0 1.5707 0.0</pose>
+        <update_rate>5</update_rate>
+        <ray>
+            <scan>
+              <horizontal>
+                <samples>5</samples>
+                <resolution>1.0</resolution>
+                <min_angle>-0.25</min_angle>
+                <max_angle>0.25</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>5</samples>
+                <resolution>1</resolution>
+                <min_angle>-0.25</min_angle>
+                <max_angle>0.25</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.05</min>
+              <max>3.00</max>
+              <resolution>0.035</resolution>
+            </range>
+        </ray>
+        <visualize>true</visualize>
+        <plugin filename="libgazebo_ros_range.so" name="gazebo_ros_range">
+            <robotNamespace/>
+            <gaussianNoise>0.005</gaussianNoise>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>5</updateRate>
+            <topicName>sonar_down</topicName>
+            <frameName>sonar_down_link</frameName>
+            <fov>0.5</fov>
+            <radiation>ultrasound</radiation>
+        </plugin>
+      </sensor>
+
+    </link>
+  </model>
+</sdf>
