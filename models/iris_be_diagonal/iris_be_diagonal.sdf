@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version='1.5'>
-  <model name='iris_be_2'>
+  <model name='iris_be_diagonal'>
 
     <include>
       <uri>model://iris</uri>
@@ -10,7 +10,7 @@
       <pose>0.12 0 0 0 0 0</pose>
     </include>
     <include>
-      <uri>model://sonar_be_2</uri>
+      <uri>model://sonar_be_diagonal</uri>
       <pose>0.12 0 0.05 0 0 0</pose>
     </include>
 
@@ -27,7 +27,7 @@
     </joint>
 
     <joint name="sonar_joint" type="revolute">
-      <child>sonar_be_2::link</child>
+      <child>sonar_be_diagonal::link</child>
       <parent>iris::base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>

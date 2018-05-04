@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.5">
-  <model name="sonar_be_2">
+  <model name="sonar_be_diagonal">
     <pose>0 0 0.036 0 0 0</pose>
     <link name="link">
 
