@@ -10,7 +10,7 @@
       <pose>0.12 0 0 0 0 0</pose>
     </include>
     <include>
-      <uri>model://sonar_be_plus</uri>
+      <uri>model://sonar_tof_be_plus</uri>
       <pose>0.12 0 0.05 0 0 0</pose>
     </include>
 
@@ -27,7 +27,7 @@
     </joint>
 
     <joint name="sonar_joint" type="revolute">
-      <child>sonar_be_plus::link</child>
+      <child>sonar_tof_be_plus::link</child>
       <parent>iris::base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>
